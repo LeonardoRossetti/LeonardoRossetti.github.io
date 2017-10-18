@@ -212,3 +212,8 @@ color: #FFFFFF;
     height: 300px;
     width: 300px;
 }
+
+li p {
+        line-height: 3px;
+        margin-bottom: 2px;
+}
