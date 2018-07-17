@@ -41,6 +41,10 @@ a,a:hover {
     text-decoration:none;
 }
 
+.nav.navbar-nav.navbar-right a:hover{
+    font-size:1.1em;
+}
+
 p {
     line-height: 30px;
     margin-bottom: 23px;
