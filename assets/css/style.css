@@ -43,6 +43,7 @@ a,a:hover {
 
 .nav.navbar-nav.navbar-right a:hover{
     font-size:1.1em;
+    font-weight: bold;
 }
 
 p {
