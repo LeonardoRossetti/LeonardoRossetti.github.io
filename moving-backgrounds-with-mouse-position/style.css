@@ -1,0 +1,23 @@
+.module {
+    --x: 0px;
+    --y: 0px;
+    background-image: url(https://images.unsplash.com/photo-1499162526249-f5b8b9ba9923?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=865bf5c0b77ceb22e88de9fd41c5a671);
+    background-size: 1000px;
+    background-position: var(--x) var(--y);
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+  }
+  
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(
+      #666,
+      #222
+    );
+  }
