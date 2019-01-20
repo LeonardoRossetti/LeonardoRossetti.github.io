@@ -1,241 +1,823 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Leonardo Rossetti">
-
-    <!-- this is the code that will allow icon to be visible in the title bar of the brower -->
-    <link rel="icon" type="image/ico" href="assets/img/cadcorp_developer_200x200.png" />
-    <title>Leonardo Rossetti</title>
-    <!--GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!--BOOTSTRAP MAIN STYLES -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!--FONTAWESOME MAIN STYLE -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!--CUSTOM STYLE -->
-    <link href="assets/css/style.css" rel="stylesheet" />    
+<title>Mutts</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Mutts">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
 <body>
-    <header class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <nav class="navbar-header">
-                <a class="navbar-brand" href="#">LEONARDO ROSSETTI</a>
-            </nav>
-            <nav class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#header-section">HOME</a></li>
-                    <li><a href="#about-section">ABOUT</a></li>
-                    <li><a href="#work-section">MY-WORK</a></li>
-                    <li><a href="#contact-section">CONTACT</a></li>
-                </ul>
-            </nav>           
-        </div>
-    </header>
-    <div id="header-section">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1><strong> Leonardo Rossetti</strong>
-                    </h1>
-                     <br /> <br /> <br />
-                    <h2> Full stack | .Net Developer </h2>
-                     <br />
-                  <a href="#about-section"> <i class="fa fa-angle-double-down fa-5x down-icon"></i> </a>
-                </div>
-            </div> 
-        </div> 
-    </div> 
-    <div id="about-section" >
-        <div class="container" >
-            <div class="row main-top-margin text-center">
-                <div class="col-md-10 col-md-offset-2" data-scrollreveal="enter top and move 100px, wait 0.3s">
-                    <h1>Who Am I ?</h1>
-                    <h4>
-                        <p class="description"></p>
-                    </h4>
-                </div>
-            </div>
-            <div class="row main-low-margin text-center">
-                <div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
-                    <img class="img-circle" src="assets/img/team/team1.png" alt="" />
-                    <h4><strong>Leonardo Rossetti</strong></h4>
-                    <p class="secondDescription"></p>
-                    <p>
-                        <a href="https://www.facebook.com/leoorossetti"><i class="fa fa-facebook-square fa-2x color-facebook"></i></a>
-                        <a href="https://twitter.com/LeoRos7"><i class="fa fa-twitter-square fa-2x color-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/leonardo-rossetti-17992841/"><i class="fa fa-linkedin-square fa-2x color-linkedin"></i></a>
-                        <a href="https://github.com/LeonardoRossetti"><i class="fa fa-github-square fa-2x color-github"></i></a>
-                    </p>
-                </div>
-                <div class="col-md-7 col-sm-7 col-md-offset-1  text-justify" data-scrollreveal="enter right and move 100px, wait 0.4s">
-                    <h3>Skills</h3>
-                    <ul class="text-margin">
-                        <li><p>Software Development</p></li>
-                        <li><p>Solutions Deployment</p></li>
-                        <li><p>Requirements Definition</p></li>
-                        <li><p>Coding & Scripting</p></li>
-                        <li><p>Debugging & Troubleshooting</p></li>
-                        <li><p>Testing & Documentation</p></li>
-                    </ul>
-                    <h3>Technology Summary</h3>
-                    <p>
-                        <strong>Programming:</strong> C#, .NET, XML, SQL, Java, HTML5, CSS, Angular2, JavaScript, JQuery, Ionic 3<br />
-                        <strong>Software:</strong> Visual Studio (code), MS Office, Oracle, SQL Server, Firebase<br />
-                        <strong>Systems:</strong> Windows
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="work-section" >
-         <div class="container" >
-            <div class="row main-top-margin text-center" data-scrollreveal="enter top and move 100px, wait 0.3s">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1>Work History</h1>
-                </div>
-            </div>
-            <div class="row main-low-margin" >
-                <div class="col-md-10  col-md-offset-1 ">
-                    <div class="col-md-4 col-sm-4" data-scrollreveal="enter left and move 100px, wait 0.8s">
-                        I made an app to a solar energy company in Brazil using Ionic 3, this app can be found on App Store using this link:
-                         <a href="https://play.google.com/store/apps/details?id=leoo.rossetti.ksOficial">KS Solar Energy</a>
-                        <br><br>
-                        This are some images about this app:
-                        <img src="assets/img/product/ks_abertura.PNG" alt="" />
-                        <img src="assets/img/product/ks_inicial.PNG" alt="" />
-                        <img src="assets/img/product/ks_form.PNG" alt="" />
-                    </div>
-                    <div class="col-md-8 " data-scrollreveal="enter right and move 100px, wait 0.4s">
-                        <!-- Senior Sistemas -->
-                        <h4><strong>Software Development Engineer</strong> <br /> Senior Sistemas | Blumenau, Brazil (Oct 2013 - May 2018)</h4>
-                        <p>
-                            I worked with an ERP system. My responsibility was integrate our system with government system through web 
-                            services. I worked with solve client problems and sometimes I had to talk directly with them to understand 
-                            what was the problem. I also worked with new features of the system, always thinking in improve the system
-                            performance and UX. If at Cetil I worked on Town Hall system, now I was working on the other side. I worked 
-                            in one ERP system, and my module had to provide a WCF service to ERP send the invoices to us and we had to 
-                            send all the invoices to the city halls and the government. At Senior I worked with .Net, WCF Services, 
-                            SQL Server, Oracle, Java, Angular, HTML, CSS and JavaScript. 
-                        </p>
-                        <p>Responsabilities:</p>
-                        <ul class="text-margin">
-                            <li><p>Analyze and develop new features for the framework</p></li>
-                            <li><p>Support developers using the framework</p></li>
-                            <li><p>Keep automated tests and documentation up to date</p></li>
-                            <li><p>Lead a team of 4 developers on the development of new features</p></li>
-                        </ul>
-                        <!-- Benner Sistemas -->
-                        <h4><strong>Independent Software Developer</strong> <br /> Benner Sistemas | Blumenau, Brazil (Jan 2013 - Oct 2013)</h4>
-                        <p>
-                            At Benner, I was hired only to work on an online ticket sales system. I was hired to contribute with the
-                            development of a new module to generate invoices when there were sales. When I finished this project, I 
-                            was called to work at Senior Sistemas. At Benner I worked with .Net, WCF Services, SQL Server, Angular, 
-                            HTML, CSS, jQuery and JavaScript. 
-                        </p>
-                        <p>Responsabilities:</p>
-                        <ul class="text-margin">
-                            <li><p>Develop a new feature for the system</p></li>
-                            <li><p>Keep automated tests and documentation up to date</p></li>
-                        </ul>
-                        <!-- Cetil Sistemas -->
-                        <h4><strong>Junior Software Developer</strong> <br /> Cetil Sistemas | Blumenau, Brazil (Jun 2011 - Jan 2013)</h4>
-                        <p>
-                            In my first opportunity in IT area I was making a course of C# and I was selected with other five 
-                            students to be hired. It was a great time to me, I learned a lot of things and was a great opportunity
-                            to work together with most experienced software developers. I worked in a system for town hall 
-                            invoices control using .Net technology.
-                        </p>
-                        <p>Responsabilities:</p>
-                        <ul class="text-margin">
-                            <li><p>Develop new features for the system</p></li>
-                            <li><p>Keep automated tests and documentation up to date</p></li>
-                            <li><p>Fix and develop new features using native JavaScript and JQuery</p></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Menu -->
 
-    <div id="contact-section">
-        <div class="container">
-            <div class="row main-top-margin text-center">
-                <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
-                    <h1>Contact / Hire Me</h1>
-                    <h4>
-                        You can contact me in my cellphone or you can email me. 
-                    </h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 ">
-                    <div class="col-md-4" data-scrollreveal="enter left and move 100px, wait 0.4s">
-                        <h3> My Work Location</h3>
-                        <hr />
-                        <span>Auckland Central, New Zealand.</span>
-                        <div id="map"></div>
-                        <script>
-                          function initMap() {
-                            var uluru = {lat: -36.8547054, lng: 174.7585847};
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                              zoom: 5,
-                              center: uluru
-                            });
-                            var marker = new google.maps.Marker({
-                              position: uluru,
-                              map: map
-                            });
-                          }
-                        </script>
-                        <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArNtKkivSA0QCxyM2LVtCvL-zDPyuL098&callback=initMap">
-                        </script>
-                    </div>
-                    <div class="col-md-6" data-scrollreveal="enter right and move 100px, wait 0.4s">
-                        <h3>Contact me</h3>
-                        <hr />
-                        <p>
-                            Call: +64-27-2684611<br />
-                            Email: leoo.rossetti@gmail.com<br /> 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-        <div class="container">
-            <div class="row ">
-                &copy; 2018 | All Right Reserved
-            </div>
-        </div>
-    </div>
-    <script src="assets/js/jquery.js"></script>
-    <!-- CORE BOOTSTRAP LIBRARY -->
-    <script src="assets/js/bootstrap.min.js"></script>
-     <!-- SCROLL REVEL LIBRARY FOR SCROLLING ANIMATIONS-->
-    <script src="assets/js/scrollReveal.js"></script>
-       <!-- CUSTOM SCRIPT-->
-    <script src="assets/js/custom.js"></script>
+<div class="menu">
 
-    <script>
-        var description = "Versatile programmer with a seven-year track record of object-oriented programming. Familiar with all"+
-                    "phases of the software development lifecycle, with a strong working knowledge of algorithms and"+
-                    "data structures.";
+	<!-- Search -->
+	<div class="menu_search">
+		<form action="#" id="menu_search_form" class="menu_search_form">
+			<input type="text" class="search_input" placeholder="Buscar Item" required="required">
+			<button class="menu_search_button"><img src="images/search.png" alt=""></button>
+		</form>
+	</div>
+	<!-- Navigation -->
+	<div class="menu_nav">
+		<ul>
+			<li class="active"><a href="#">Feminino</a></li>
+			<li><a href="#">Masculino</a></li>
+			<li><a href="#">Infantil</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</div>
+	<!-- Contato Info -->
+	<div class="menu_contact">
+		<div class="menu_phone d-flex flex-row align-items-center justify-content-start">
+			<div><div><img src="images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
+			<div>+55 (047) 9992 0106</div>
+		</div>
+		<div class="menu_social">
+			<ul class="menu_social_list d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-        var secondDescription = "I`m a person who really like to learn new things and I really love what I do. In my whole career I"+
-                    "mostly worked with Microsoft technologies like C# .Net, Visual Studio, SQL Server. And I've experience with web"+
-                    "development using AngularJs and mobile development for Android using Ionic 3. I`ve been working with IT for 7 years"+
-                    "in Brazil. And now I`m searching for a new challenge in Auckland to improve myself and contribute with new projects.";
+<div class="super_container">
 
-        $( document ).ready(function() {
-            $("p.description").text(secondDescription);
-            $("p.secondDescription").text(description);
-        });
-    </script> 
+	<!-- Header -->
+
+	<header class="header">
+		<div class="header_overlay"></div>
+		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+			<div class="logo">
+				<a href="index.html">
+					<div class="d-flex flex-row align-items-center justify-content-start">
+						<div><img src="images/Logo.JPG" alt=""></div>
+					</div>
+				</a>	
+			</div>
+			<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			<nav class="main_nav">
+				<ul class="d-flex flex-row align-items-start justify-content-start">
+					<li class="active"><a href="#">Feminino</a></li>
+					<li><a href="#">Masculino</a></li>
+					<li><a href="#">Infantil</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</nav>
+			<div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
+				<!-- Search -->
+				<div class="header_search">
+					<form action="#" id="header_search_form">
+						<input type="text" class="search_input" placeholder="Buscar Item" required="required">
+						<button class="header_search_button"><img src="images/search.png" alt=""></button>
+					</form>
+				</div>
+				<!-- User -->
+				<!-- <div class="user"><a href="#"><div><img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik"><div>1</div></div></a></div>
+				<!-- Cart -->
+				<!-- <div class="cart"><a href="cart.html"><div><img class="svg" src="images/cart.svg" alt="https://www.flaticon.com/authors/freepik"></div></a></div>  -->
+				<!-- Phone -->
+				<div class="header_phone d-flex flex-row align-items-center justify-content-start">
+					<div><div><img src="images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
+					<div>+55 (047) 9992 0106</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="super_container_inner">
+		<div class="super_overlay"></div>
+
+		<!-- Home -->
+
+		<div class="home">
+			<!-- Home Slider -->
+			<div class="home_slider_container">
+				<div class="owl-carousel owl-theme home_slider">
+					
+					<!-- Slide -->
+					<div class="owl-item">
+						<div class="background_image" style="background-image:url(images/home.jpg)"></div>
+						<div class="container fill_height">
+							<div class="row fill_height">
+								<div class="col fill_height">
+									<div class="home_container d-flex flex-column align-items-center justify-content-start">
+										<div class="home_content">
+											<div class="home_title">Nova coleção</div>
+											<div class="home_subtitle">Primavera - Verão</div>
+											<div class="home_items">
+												<div class="row">
+													<div class="col-sm-3 offset-lg-1">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_1.jpg" alt=""></a></div>
+													</div>
+													<div class="col-lg-4 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+														<div class="product home_item_large">
+															<div class="product_tag d-flex flex-column align-items-center justify-content-center">
+																<div>
+																	<div>de</div>
+																	<div>R$9<span>.99</span></div>
+																</div>
+															</div>
+															<div class="product_image"><img src="images/home_2.jpg" alt=""></div>
+															<div class="product_content">
+																<div class="product_info d-flex flex-row align-items-start justify-content-start">
+																	<div>
+																		<div>
+																			<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+																			<div class="product_category">Em <a href="category.html">Categoria</a></div>
+																		</div>
+																	</div>
+																	<div class="ml-auto text-right">
+																		<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+																		<div class="product_price text-right">R$3<span>.99</span></div>
+																	</div>
+																</div>
+																<!-- <div class="product_buttons">
+																	<div class="text-right d-flex flex-row align-items-start justify-content-start">
+																		<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/heart.svg" alt=""><div>+</div></div></div>
+																		</div>
+																		<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/cart_2.svg" alt=""><div>+</div></div></div>
+																		</div>
+																	</div>
+																</div> -->
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-3">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_3.jpg" alt=""></a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- Slide -->
+					<div class="owl-item">
+						<div class="background_image" style="background-image:url(images/home.jpg)"></div>
+						<div class="container fill_height">
+							<div class="row fill_height">
+								<div class="col fill_height">
+									<div class="home_container d-flex flex-column align-items-center justify-content-start">
+										<div class="home_content">
+											<div class="home_title">Popular</div>
+											<div class="home_subtitle">Vestir bem no verão</div>
+											<div class="home_items">
+												<div class="row">
+													<div class="col-sm-3 offset-lg-1">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_1.jpg" alt=""></a></div>
+													</div>
+													<div class="col-lg-4 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+														<div class="product home_item_large">
+															<div class="product_tag d-flex flex-column align-items-center justify-content-center">
+																<div>
+																	<div>de</div>
+																	<div>R$3<span>.99</span></div>
+																</div>
+															</div>
+															<div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+															<div class="product_content">
+																<div class="product_info d-flex flex-row align-items-start justify-content-start">
+																	<div>
+																		<div>
+																			<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+																			<div class="product_category">Em <a href="category.html">Categoria</a></div>
+																		</div>
+																	</div>
+																	<div class="ml-auto text-right">
+																		<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+																		<div class="product_price text-right">R$3<span>.99</span></div>
+																	</div>
+																</div>
+																<!-- <div class="product_buttons">
+																	<div class="text-right d-flex flex-row align-items-start justify-content-start">
+																		<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/heart.svg" alt=""><div>+</div></div></div>
+																		</div>
+																		<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/cart_2.svg" alt=""><div>+</div></div></div>
+																		</div>
+																	</div>
+																</div> -->
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-3">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_3.jpg" alt=""></a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- Slide -->
+					<div class="owl-item">
+						<div class="background_image" style="background-image:url(images/home.jpg)"></div>
+						<div class="container fill_height">
+							<div class="row fill_height">
+								<div class="col fill_height">
+									<div class="home_container d-flex flex-column align-items-center justify-content-start">
+										<div class="home_content">
+											<div class="home_title">Mais vendidos</div>
+											<div class="home_subtitle">Coleção de Verão</div>
+											<div class="home_items">
+												<div class="row">
+													<div class="col-sm-3 offset-lg-1">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_1.jpg" alt=""></a></div>
+													</div>
+													<div class="col-lg-4 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+														<div class="product home_item_large">
+															<div class="product_tag d-flex flex-column align-items-center justify-content-center">
+																<div>
+																	<div>de</div>
+																	<div>R$3<span>.99</span></div>
+																</div>
+															</div>
+															<div class="product_image"><img src="images/product_2.jpg" alt=""></div>
+															<div class="product_content">
+																<div class="product_info d-flex flex-row align-items-start justify-content-start">
+																	<div>
+																		<div>
+																			<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+																			<div class="product_category">Em <a href="category.html">Categoria</a></div>
+																		</div>
+																	</div>
+																	<div class="ml-auto text-right">
+																		<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+																		<div class="product_price text-right">R$3<span>.99</span></div>
+																	</div>
+																</div>
+																<!-- <div class="product_buttons">
+																	<div class="text-right d-flex flex-row align-items-start justify-content-start">
+																		<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/heart.svg" alt=""><div>+</div></div></div>
+																		</div>
+																		<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/cart_2.svg" alt=""><div>+</div></div></div>
+																		</div>
+																	</div>
+																</div> -->
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-3">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_3.jpg" alt=""></a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!-- Slide -->
+					<div class="owl-item">
+						<div class="background_image" style="background-image:url(images/home.jpg)"></div>
+						<div class="container fill_height">
+							<div class="row fill_height">
+								<div class="col fill_height">
+									<div class="home_container d-flex flex-column align-items-center justify-content-start">
+										<div class="home_content">
+											<div class="home_title">Mais vendidos</div>
+											<div class="home_subtitle">Primavera</div>
+											<div class="home_items">
+												<div class="row">
+													<div class="col-sm-3 offset-lg-1">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_1.jpg" alt=""></a></div>
+													</div>
+													<div class="col-lg-4 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+														<div class="product home_item_large">
+															<div class="product_tag d-flex flex-column align-items-center justify-content-center">
+																<div>
+																	<div>de</div>
+																	<div>R$3<span>.99</span></div>
+																</div>
+															</div>
+															<div class="product_image"><img src="images/product_3.jpg" alt=""></div>
+															<div class="product_content">
+																<div class="product_info d-flex flex-row align-items-start justify-content-start">
+																	<div>
+																		<div>
+																			<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+																			<div class="product_category">Em <a href="category.html">Categoria</a></div>
+																		</div>
+																	</div>
+																	<div class="ml-auto text-right">
+																		<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+																		<div class="product_price text-right">R$3<span>.99</span></div>
+																	</div>
+																</div>
+																<!-- <div class="product_buttons">
+																	<div class="text-right d-flex flex-row align-items-start justify-content-start">
+																		<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/heart.svg" alt=""><div>+</div></div></div>
+																		</div>
+																		<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+																			<div><div><img src="images/cart_2.svg" alt=""><div>+</div></div></div>
+																		</div>
+																	</div>
+																</div> -->
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-3">
+														<div class="home_item_side"><a href="product.html"><img src="images/home_3.jpg" alt=""></a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+				</div>
+				<div class="home_slider_nav home_slider_nav_prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+				<div class="home_slider_nav home_slider_nav_next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+
+				<!-- Home Slider Dots -->
+				
+				<div class="home_slider_dots_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="home_slider_dots">
+									<ul id="home_slider_custom_dots" class="home_slider_custom_dots d-flex flex-row align-items-center justify-content-center">
+										<li class="home_slider_custom_dot active">01</li>
+										<li class="home_slider_custom_dot">02</li>
+										<li class="home_slider_custom_dot">03</li>
+										<li class="home_slider_custom_dot">04</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Products -->
+
+		<div class="products">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3">
+						<div class="section_title text-center">Mais vendidas</div>
+					</div>
+				</div>
+				<div class="row page_nav_row">
+					<div class="col">
+						<div class="page_nav">
+							<ul class="d-flex flex-row align-items-start justify-content-center">
+								<li class="active"><a href="category.html">Feminino</a></li>
+								<li><a href="category.html">Masculino</a></li>
+								<li><a href="category.html">Infantil</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row products_row">
+					
+					<!-- Product -->
+					<div class="col-xl-4 col-md-6">
+						<div class="product">
+							<div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+											<div class="product_category">Em <a href="category.html">Categoria</a></div>
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+										<div class="product_price text-right">R$3<span>.99</span></div>
+									</div>
+								</div>
+								<!-- <div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-xl-4 col-md-6">
+						<div class="product">
+							<div class="product_image"><img src="images/product_2.jpg" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+											<div class="product_category">Em <a href="category.html">Categoria</a></div>
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+										<div class="product_price text-right">R$3<span>.99</span></div>
+									</div>
+								</div>
+								<!-- <div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-xl-4 col-md-6">
+						<div class="product">
+							<div class="product_image"><img src="images/product_3.jpg" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+											<div class="product_category">Em <a href="category.html">Categoria</a></div>
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+										<div class="product_price text-right">R$3<span>.99</span></div>
+									</div>
+								</div>
+								<!-- <div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-xl-4 col-md-6">
+						<div class="product">
+							<div class="product_image"><img src="images/product_4.jpg" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+											<div class="product_category">Em <a href="category.html">Categoria</a></div>
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+										<div class="product_price text-right">R$3<span>.99</span></div>
+									</div>
+								</div>
+								<!-- <div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-xl-4 col-md-6">
+						<div class="product">
+							<div class="product_image"><img src="images/product_5.jpg" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+											<div class="product_category">Em <a href="category.html">Categoria</a></div>
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+										<div class="product_price text-right">R$3<span>.99</span></div>
+									</div>
+								</div>
+								<!-- <div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Product -->
+					<div class="col-xl-4 col-md-6">
+						<div class="product">
+							<div class="product_image"><img src="images/product_6.jpg" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="product.html">Para o ano todo</a></div>
+											<div class="product_category">Em <a href="category.html">Categoria</a></div>
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+										<div class="product_price text-right">R$3<span>.99</span></div>
+									</div>
+								</div>
+								<!-- <div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row load_more_row">
+					<div class="col">
+						<div class="button load_more ml-auto mr-auto"><a href="#">Mostrar mais</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Boxes -->
+
+		<div class="boxes">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="boxes_container d-flex flex-row align-items-start justify-content-between flex-wrap">
+
+							<!-- Box -->
+							<div class="box">
+								<div class="background_image" style="background-image:url(images/box_1.jpg)"></div>
+								<div class="box_content d-flex flex-row align-items-center justify-content-start">
+									<div class="box_left">
+										<div class="box_image">
+											<a href="category.html">
+												<div class="background_image" style="background-image:url(images/box_1_img.jpg)"></div>
+											</a>
+										</div>
+									</div>
+									<div class="box_right text-center">
+										<div class="box_title">Trendsetter Collection</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Box -->
+							<div class="box">
+								<div class="background_image" style="background-image:url(images/box_2.jpg)"></div>
+								<div class="box_content d-flex flex-row align-items-center justify-content-start">
+									<div class="box_left">
+										<div class="box_image">
+											<a href="category.html">
+												<div class="background_image" style="background-image:url(images/box_2_img.jpg)"></div>
+											</a>
+										</div>
+									</div>
+									<div class="box_right text-center">
+										<div class="box_title">Mais vendidas</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Box -->
+							<div class="box">
+								<div class="background_image" style="background-image:url(images/box_3.jpg)"></div>
+								<div class="box_content d-flex flex-row align-items-center justify-content-start">
+									<div class="box_left">
+										<div class="box_image">
+											<a href="category.html">
+												<div class="background_image" style="background-image:url(images/box_3_img.jpg)"></div>
+											</a>
+										</div>
+									</div>
+									<div class="box_right text-center">
+										<div class="box_title">Mais vendidas</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Features -->
+
+		<div class="features">
+			<div class="container">
+				<div class="row">
+					
+					<!-- Feature -->
+					<div class="col-lg-4 feature_col">
+						<div class="feature d-flex flex-row align-items-start justify-content-start">
+							<div class="feature_left">
+								<div class="feature_icon"><img src="images/icon_1.svg" alt=""></div>
+							</div>
+							<div class="feature_right d-flex flex-column align-items-start justify-content-center">
+								<div class="feature_title">Pagamento rápido e seguro</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature -->
+					<div class="col-lg-4 feature_col">
+						<div class="feature d-flex flex-row align-items-start justify-content-start">
+							<div class="feature_left">
+								<div class="feature_icon ml-auto mr-auto"><img src="images/icon_2.svg" alt=""></div>
+							</div>
+							<div class="feature_right d-flex flex-column align-items-start justify-content-center">
+								<div class="feature_title">Linha premium</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Feature -->
+					<div class="col-lg-4 feature_col">
+						<div class="feature d-flex flex-row align-items-start justify-content-start">
+							<div class="feature_left">
+								<div class="feature_icon"><img src="images/icon_3.svg" alt=""></div>
+							</div>
+							<div class="feature_right d-flex flex-column align-items-start justify-content-center">
+								<div class="feature_title">Entrega grátis em Blumenau</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="footer_content">
+				<div class="container">
+					<div class="row">
+						
+						<!-- About -->
+						<div class="col-lg-4 footer_col">
+							<div class="footer_about">
+								<div class="footer_logo">
+									<a href="#">
+										<div class="d-flex flex-row align-items-center justify-content-start">
+											<div class="footer_logo_icon"><img src="images/logo_2.png" alt=""></div>
+											<div>Perto de você</div>
+										</div>
+									</a>		
+								</div>
+								<div class="footer_about_text">
+									<p>Buscaremos as melhores formas de entrega até a sua loja. Garantimos peças com qualidade diferenciada no melhor estilo MUTTS!</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Links -->
+						<div class="col-lg-4 footer_col">
+							<div class="footer_menu">
+								<div class="footer_title">Suporte</div>
+								<ul class="footer_list">
+									<li>
+										<a href="#"><div>Serviço de vendas<div class="footer_tag_1">online agora</div></div></a>
+									</li>
+									<li>
+										<a href="#"><div>Guia de tamanhos<div class="footer_tag_2">recomendado</div></div></a>
+									</li>
+									<li>
+										<a href="#"><div>Termos e condições</div></a>
+									</li>
+									<li>
+										<a href="#"><div>Contato</div></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Footer Contato -->
+						<div class="col-lg-4 footer_col">
+							<div class="footer_contact">
+								<div class="footer_title">Entre em contato</div>
+								<div class="newsletter">
+									<form action="#" id="newsletter_form" class="newsletter_form">
+										<input type="email" class="newsletter_input" placeholder="Cadastre aqui o seu Email" required="required">
+										<button class="newsletter_button">+</button>
+									</form>
+									<br>
+								<label>Cadastre o seu email e receba as novidades antes.</label>
+								
+								</div>
+								<div class="footer_social">
+									<div class="footer_title">Social</div>
+									<ul class="footer_social_list d-flex flex-row align-items-start justify-content-start">
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bar">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="footer_bar_content d-flex flex-md-row flex-column align-items-center justify-content-start">
+								<div class="copyright order-md-1 order-2">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Feito por <a href="https://github.com/LeonardoRossetti" target="_blank">Leonardo Rossetti</a>
+</div>
+								<nav class="footer_nav ml-md-auto order-md-2 order-1">
+									<ul class="d-flex flex-row align-items-center justify-content-start">
+										<li><a href="category.html">Feminino</a></li>
+										<li><a href="category.html">Masculino</a></li>
+										<li><a href="category.html">Infantil</a></li>
+										<li><a href="#">Contato</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
