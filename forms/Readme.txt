@@ -1,17 +1,20 @@
 Contact form
 ============
 
-The contact form posts to forms/contact.php, which saves each submission to
-forms/data/submissions.json.
+GitHub Pages and local development (localhost)
+----------------------------------------------
+GitHub Pages and local static servers cannot run PHP. In those environments the
+form uses FormSubmit (assets/js/contact-form.js) to deliver messages to
+leoo.rossetti@gmail.com.
 
-Requirements
-------------
-- PHP 7.4+ with the web server configured to run PHP
-- The forms/data/ directory must be writable by PHP
+The first submission triggers a confirmation email from FormSubmit — click the
+link in that email to activate the form.
 
-GitHub Pages does not run PHP. To use this form, host the site on a server
-that supports PHP (shared hosting, VPS, etc.) or deploy only the static
-files elsewhere and point the form action to your PHP endpoint.
+PHP hosting
+-----------
+To save submissions to forms/data/submissions.json instead, host the site on a
+PHP server and add data-backend="php" to the contact form element in index.html.
+Ensure forms/data/ is writable by the web server.
 
 Security
 --------
