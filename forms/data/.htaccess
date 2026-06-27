@@ -1,0 +1,2 @@
+# Block direct web access to stored submissions.
+Require all denied
